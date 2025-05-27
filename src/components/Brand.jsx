@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 import { Typewriter } from "react-simple-typewriter";
 import LottieAnimation from "../animation/Walking";
 import { cookingAnimation } from "../animation";
@@ -24,7 +25,18 @@ const Brand = ({ className }) => {
                 delaySpeed={1800}
               />
             </span>
-            <span className="font-kaushan text-sky-700">Book</span>
+            <motion.span
+              animate={{
+                color: ["#ff5733", "#33ff33", "#8a33ff", "#abcd"],
+                transition: {
+                  duration: 5,
+                  repeat: Infinity,
+                },
+              }}
+              className="font-kaushan text-sky-700"
+            >
+              Book
+            </motion.span>
           </Link>
         </h1>
       </div>

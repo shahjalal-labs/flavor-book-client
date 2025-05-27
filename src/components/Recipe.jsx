@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router";
-import {motion} from "motion/react"
+import { motion } from "motion/react";
 import Button from "./Button";
 import Swal from "sweetalert2";
 
@@ -40,14 +40,15 @@ const Recipe = ({ recipe, setRecipes = () => {}, recipes = [] }) => {
   };
   return (
     <>
-      <motion.div 
-    initial={{ opacity: 0, scale: 0 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{
-        duration: 0.2,
-        scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-    }}
-      className="rounded-lg hover:shadow-md transition duration-300 max-w-[350px] shadow-xl bg-gradient-to-b from-gray-300 to-gray-100 max-sm:min-w-[300px] ">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.1,
+          scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+        }}
+        className="rounded-lg hover:shadow-md transition duration-300 max-w-[350px] shadow-xl bg-gradient-to-b from-gray-300 to-gray-100 max-sm:min-w-[300px] "
+      >
         <img
           src={image || "https://via.placeholder.com/400x250?text=No+Image"}
           // alt={title}

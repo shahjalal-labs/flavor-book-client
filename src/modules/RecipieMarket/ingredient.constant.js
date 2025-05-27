@@ -2,7 +2,8 @@ export const ingredients = [
   {
     id: 1,
     name: "Organic Tomatoes",
-    image: "https://source.unsplash.com/featured/?tomatoes",
+    image:
+      "https://images.deepai.org/art-image/8d1c8e06d9bf4c809499a9f515f9f7b5/a-basket-of-fresh-organic-tomatoes-with-drops-of-wate.jpg",
     description: "Fresh organic tomatoes, perfect for salads and sauces.",
     quantity: "1kg",
     price: 4.5,
@@ -14,7 +15,8 @@ export const ingredients = [
   {
     id: 2,
     name: "Basmati Rice",
-    image: "https://source.unsplash.com/featured/?rice",
+    image:
+      "https://images.deepai.org/art-image/b49c9450adbe4d999fec83da747fefab/a-bowl-of-premium-long-grain-basmati-paddy-rice-with-.jpg",
     description: "Premium long-grain basmati rice from the Himalayas.",
     quantity: "2kg",
     price: 8.99,
@@ -26,7 +28,8 @@ export const ingredients = [
   {
     id: 3,
     name: "Brown Eggs",
-    image: "https://source.unsplash.com/featured/?eggs",
+    image:
+      "https://images.deepai.org/art-image/2ebed0120b0745b1abea9937f25a4ec4/a-dozen-free-range-brown-eggs-in-a-recycled-paper-car.jpg",
     description: "Free-range brown eggs, packed with nutrition.",
     quantity: "12 pcs",
     price: 3.2,
@@ -38,7 +41,8 @@ export const ingredients = [
   {
     id: 4,
     name: "Fresh Basil",
-    image: "https://source.unsplash.com/featured/?basil",
+    image:
+      "https://images.deepai.org/art-image/ea710dfd20074adba0c30e1fb3088f0f/a-bunch-of-fresh-green-basil-leaves-tied-with-twine-p.jpg",
     description: "Aromatic basil leaves to add a burst of flavor.",
     quantity: "100g",
     price: 1.5,
@@ -50,7 +54,8 @@ export const ingredients = [
   {
     id: 5,
     name: "Extra Virgin Olive Oil",
-    image: "https://source.unsplash.com/featured/?oliveoil",
+    image:
+      "https://images.deepai.org/art-image/256f2203d4b347ef87da6f5994ee0971/a-glass-bottle-of-extra-virgin-olive-oil-with-olives-.jpg",
     description: "Cold-pressed olive oil from Tuscany.",
     quantity: "500ml",
     price: 9.75,
@@ -62,7 +67,8 @@ export const ingredients = [
   {
     id: 6,
     name: "Parmesan Cheese",
-    image: "https://source.unsplash.com/featured/?cheese",
+    image:
+      "https://images.deepai.org/art-image/9e7e7c625a6e4b45938964d69570ae47/a-wedge-of-aged-parmesan-cheese-on-a-wooden-board-wit.jpg",
     description: "Aged parmesan cheese with a nutty flavor.",
     quantity: "200g",
     price: 5.6,
@@ -74,7 +80,8 @@ export const ingredients = [
   {
     id: 7,
     name: "Raw Honey",
-    image: "https://source.unsplash.com/featured/?honey",
+    image:
+      "https://images.deepai.org/art-image/b03835c993864fd4a8ebbdb4baad47ab/a-jar-of-raw-golden-honey-with-a-wooden-honey-dipper-.jpg",
     description: "Unprocessed, organic raw honey.",
     quantity: "300g",
     price: 6.25,
@@ -86,7 +93,8 @@ export const ingredients = [
   {
     id: 8,
     name: "Coconut Milk",
-    image: "https://source.unsplash.com/featured/?coconutmilk",
+    image:
+      "https://images.deepai.org/art-image/51cb98db85fd48b09bdb3f93bc206f68/a-can-of-coconut-milk-beside-a-split-coconut-with-cre.jpg",
     description: "Rich coconut milk perfect for curries and desserts.",
     quantity: "400ml",
     price: 2.8,
@@ -98,7 +106,8 @@ export const ingredients = [
   {
     id: 9,
     name: "Almond Flour",
-    image: "https://source.unsplash.com/featured/?almondflour",
+    image:
+      "https://images.deepai.org/art-image/20c78bd425054d2583dc91c7b48b794b/a-bowl-of-fine-almond-flour-with-almonds-scattered-ne.jpg",
     description: "Gluten-free almond flour for healthy baking.",
     quantity: "500g",
     price: 7.0,
@@ -110,7 +119,8 @@ export const ingredients = [
   {
     id: 10,
     name: "Cumin Seeds",
-    image: "https://source.unsplash.com/featured/?cumin",
+    image:
+      "https://images.deepai.org/art-image/4cec0f7eaf024c799a0f4f6f54bac2fc/a-wooden-spoon-filled-with-cumin-seeds-on-a-spice-mar.jpg",
     description: "Whole cumin seeds for aromatic spice blends.",
     quantity: "100g",
     price: 1.99,
@@ -122,7 +132,8 @@ export const ingredients = [
   {
     id: 11,
     name: "Ground Cinnamon",
-    image: "https://source.unsplash.com/featured/?cinnamon",
+    image:
+      "https://images.deepai.org/art-image/b5a5f9308e39451fa3215759b191ffaa/a-small-glass-jar-of-ground-cinnamon-with-cinnamon-st.jpg",
     description: "Sweet and warm cinnamon powder.",
     quantity: "50g",
     price: 2.25,
@@ -134,7 +145,8 @@ export const ingredients = [
   {
     id: 12,
     name: "Red Onions",
-    image: "https://source.unsplash.com/featured/?onions",
+    image:
+      "https://images.deepai.org/art-image/a5dbb7de407d405e8cee93423b0a0892/fresh-red-onions-with-one-sliced-in-half-showing-laye.jpg",
     description: "Crisp and spicy red onions, great for cooking.",
     quantity: "1kg",
     price: 2.4,
@@ -146,7 +158,8 @@ export const ingredients = [
   {
     id: 13,
     name: "Garlic Bulbs",
-    image: "https://source.unsplash.com/featured/?garlic",
+    image:
+      "https://images.deepai.org/art-image/24e486109f624e5f988cbbb601aee3b8/a-bunch-of-garlic-bulbs-with-peeling-skin-hanging-or-.jpg",
     description: "Locally grown garlic with a pungent flavor.",
     quantity: "500g",
     price: 1.9,
@@ -158,7 +171,8 @@ export const ingredients = [
   {
     id: 14,
     name: "Fresh Ginger",
-    image: "https://source.unsplash.com/featured/?ginger",
+    image:
+      "https://images.deepai.org/art-image/47a3fa083e4742f59047a5070b9b6feb/fresh-ginger-roots-with-soil-dust-on-a-slate-board-wi.jpg",
     description: "Zesty and spicy ginger root for all recipes.",
     quantity: "300g",
     price: 2.6,
@@ -170,7 +184,8 @@ export const ingredients = [
   {
     id: 15,
     name: "Green Chillies",
-    image: "https://source.unsplash.com/featured/?greenchilli",
+    image:
+      "https://images.deepai.org/art-image/51cb98db85fd48b09bdb3f93bc206f68/a-can-of-coconut-milk-beside-a-split-coconut-with-cre.jpg",
     description: "Hot and fresh green chillies to spice up dishes.",
     quantity: "200g",
     price: 1.2,
