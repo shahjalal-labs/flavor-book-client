@@ -36,3 +36,7 @@
 .active {
   color: red;
 }
+
+.hover-effect {
+  transition: all 0.3s ease-in-out;
+}
