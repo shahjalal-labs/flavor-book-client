@@ -38,5 +38,5 @@
 }
 
 .hover-effect {
-  @apply hover:shadow-md transition-all ease-in-out duration-500 hover:border-1 border-amber-500;
+  @apply hover:shadow-md transition-all ease-in-out duration-500 hover:border-1 hover:border-amber-500;
 }

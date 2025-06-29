@@ -3,9 +3,9 @@ import AboutCard from "./About/AboutCard";
 
 const About = () => {
   return (
-    <section className="min-h-[60vh] py-5 px-6 mt-10 border bg-primary/10 rounded-xl">
+    <section className="min-h-[60vh] py-10 px-6 mt-10 border border-purple-500 bg-primary/10 rounded-xl">
       <div className="max--4xl mx-auto text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">
+        <h1 className="text-2xl md:text-3xl font-bold text-cyan-800 mb-2">
           About FlavorBook
         </h1>
         <p className="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed">

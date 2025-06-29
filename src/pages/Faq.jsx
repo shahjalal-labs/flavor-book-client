@@ -5,7 +5,7 @@ const FAQ = () => {
   return (
     <section className="min-h-screen  py-10 px-3 my-10 rounded-xl shadow">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-orange-400 mb-12 font-kaushan">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12 font-kaushan">
           <Typewriter
             words={["Frequently Asked Questions"]}
             loop={0}
