@@ -8,8 +8,8 @@ const About = () => {
         <h1 className="text-2xl md:text-3xl font-bold text-cyan-800 mb-2">
           About FlavorBook
         </h1>
-        <p className="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed">
-          <span className="font-semibold text-orange-500">FlavorBook</span> — a
+        <p className="text-lg  text-purple-950 mb-10 leading-relaxed">
+          <span className="font-semibold text-secondary">FlavorBook</span> — a
           recipe-sharing haven for passionate foodies. Whether you're a kitchen
           novice or a seasoned chef, FlavorBook connects you with flavors from
           around the world. Discover top-rated dishes, create your own, and
