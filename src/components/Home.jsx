@@ -5,14 +5,15 @@ import Recipes from "./Recipes";
 import About from "../pages/About";
 import FAQ from "../pages/Faq";
 import FeedbackPage from "../pages/FeedbackPage";
+import slides from "./slider.constant";
 const Home = () => {
   return (
     <div>
       <Helmet>
         <title>Home || FlavorBook</title>
       </Helmet>
-      <div className="mb-20  bg-gray-100 shadow-2xl -1 rounded-xl  border-1 border-b-0 border-purple-200">
-        <Slider />
+      <div className="mb-10  bg-gray-100 shadow-xl rounded-xl  border-1 border-b-0 border-purple-200">
+        <Slider slides={slides} />
       </div>
 
       <div className="bg-gray-100 my-10 py-3 rounded-xl">
