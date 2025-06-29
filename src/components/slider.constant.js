@@ -1,9 +1,9 @@
 const slides = [
   {
-    src: "https://images.deepai.org/art-image/1c7d399d10664216b60edf8c33452897/split-banner-image-showing-on-the-left-a-chef-holding.jpg",
-    heading: "Unleash Culinary Brilliance",
+    src: "https://images.deepai.org/art-image/5e69dbad9d434db286e33e5afe301e1e/flat-lay-photo-of-vibrant-cooking-ingredients-spread-.jpg",
+    heading: "Rooted in Freshness",
     description:
-      "Step into FlavorBook and explore bold, world-class recipes crafted with precision, creativity, and passion by chefs worldwide.",
+      "We believe in real ingredients—locally sourced, organically grown, and selected to elevate your every culinary creation.",
   },
   {
     src: "https://images.deepai.org/art-image/3dc9083a3d70438fa32e8de01576ca6c/horizontal-banner-style-image-of-elegant-plated-dishe.jpg",
@@ -12,13 +12,14 @@ const slides = [
       "Experience elegant presentations paired with unforgettable flavors. Every dish is a story of taste and tradition, redefined.",
   },
   {
-    src: "https://images.deepai.org/art-image/5e69dbad9d434db286e33e5afe301e1e/flat-lay-photo-of-vibrant-cooking-ingredients-spread-.jpg",
-    heading: "Rooted in Freshness",
+    src: "https://images.deepai.org/art-image/1c7d399d10664216b60edf8c33452897/split-banner-image-showing-on-the-left-a-chef-holding.jpg",
+    heading: "Unleash Culinary Brilliance",
     description:
-      "We believe in real ingredients—locally sourced, organically grown, and selected to elevate your every culinary creation.",
+      "Step into FlavorBook and explore bold, world-class recipes crafted with precision, creativity, and passion by chefs worldwide.",
   },
+
   {
-    src: "https://api.deepai.org/job-view-file/8e90ea9a-a899-40a4-bd91-4fdf5bc83fc7/outputs/output.jpg",
+    src: "https://images.deepai.org/art-image/1658c073e9c54efbbeddbb595e2e5c24/a-magical-open-recipe-book-on-a-table-glowing-ingredi.jpg",
     heading: "Cook. Create. Celebrate.",
     description:
       "Whether you're a home cook or a master chef, join our vibrant community and transform meals into memorable moments.",

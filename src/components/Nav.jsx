@@ -8,20 +8,15 @@ import { Link, NavLink } from "react-router";
 import Button from "./Button";
 
 const Nav = () => {
-  // const isMobile = useMediaQuery({
-  // maxWidth: 639,
-  // });
   const [open, setOpen] = useState(false);
 
   const [themeLight, setThemeLight] = useState(true);
   const { user, logout, loading } = useContext(AuthContext);
 
-  // const { pathname } = useLocation();
   return (
     <header className="p-4  max-container sticky z-10 top-2">
       <nav className="flex max-lg:flex-row-reverse items-center justify-between  p-2 rounded-xl sticky z-[1000] bg-gradient-to-r from-gray-50 to-gray-200">
         <div>
-          {" "}
           <Brand />
         </div>
 
