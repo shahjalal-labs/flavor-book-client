@@ -54,15 +54,15 @@
 │   │       └── ss-10-48-41-AM_29-06-25.png
 │   ├── bun.lock
 │   ├── components
-│   │   ├── Banner.jsx
 │   │   ├── Brand.jsx
 │   │   ├── Button.jsx
 │   │   ├── Errorpage.jsx
 │   │   ├── FooterLinks.jsx
-│   │   ├── Header.jsx
 │   │   ├── Home.jsx
 │   │   ├── Input.jsx
 │   │   ├── Menu.jsx
+│   │   ├── Nav
+│   │   │   └── NavContent.jsx
 │   │   ├── Nav.jsx
 │   │   ├── Newsletter.jsx
 │   │   ├── Recipe.jsx
@@ -119,6 +119,8 @@
 │   │       └── RecipeMarkteRoutes.jsx
 │   ├── package.json
 │   ├── pages
+│   │   ├── About
+│   │   │   └── AboutCard.jsx
 │   │   ├── About.jsx
 │   │   ├── AddRecipe.jsx
 │   │   ├── Contact.jsx
@@ -146,6 +148,6 @@
 ├── structure.md
 └── vite.config.js
 
-26 directories, 118 files
+28 directories, 118 files
 
 ```

@@ -80,7 +80,7 @@ const Recipes = () => {
             Total Recipes: {recipes.length.toString().padStart(2, "0")}
           </h1>
 
-          <div className="flex flex-wrap gap-4 max-sm:justify-center items-center mb-6">
+          <div className="flex flex-col gap-4 max-sm:justify-center max-sm:items-center mb-6  ">
             <div>
               <label className="font-medium text-teal-600 mr-2">
                 Filter by Cuisine:
