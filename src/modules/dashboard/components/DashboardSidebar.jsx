@@ -4,13 +4,28 @@ const DashboardSidebar = () => {
   return (
     <div className="min-h-[80vh] bg-gradient-to-br from-green-400/30 to-blue-500/30 p- rounded-xl">
       <h2>Dashboard Sidebar</h2>
-      <ul>
+      <ul className="space-y-2">
         <li>
           <NavLink to="/dashboard" className="btn btn-info btn-block">
             Overview
           </NavLink>
         </li>
-        <li>Dashboard Sidebar</li>
+        <li>
+          <NavLink
+            to="/dashboard/all-recipes"
+            className="btn btn-info btn-block"
+          >
+            All Recipes
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/dashboard/my-recipes"
+            className="btn btn-info btn-block"
+          >
+            My Recipes
+          </NavLink>
+        </li>
         {/* 👉 Add more links here */}
       </ul>
     </div>
