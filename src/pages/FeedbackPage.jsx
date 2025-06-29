@@ -12,7 +12,8 @@ const FeedbackPage = () => {
         {feedbacks.map((fb, i) => (
           <div
             key={i}
-            className="bg-white shadow-lg p-6 rounded-xl border hover:scale-105 transition-transform duration-300 ease-in-out border-orange-200 hover:shadow-xl"
+            className=" shadow-lg p-6 rounded-xl border hover:scale-105 transition-transform duration-300 ease-in-out border-orange-200 hover:shadow-xl
+            bg-gradient-to-br from-purple-500/30 via-sky-200/30 via-orange-300 to-cyan-500/20"
           >
             <div className="flex items-center gap-4 mb-4">
               <img
@@ -40,7 +41,7 @@ const FeedbackPage = () => {
       <div className="text-center mt-12">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="mx-auto h-20 w-20 text-orange-500 animate-bounce"
+          className="mx-auto h-20 w-20 text-blue-500 animate-bounce"
           viewBox="0 0 24 24"
           fill="currentColor"
         >
@@ -54,7 +55,7 @@ const FeedbackPage = () => {
           />
         </svg>
         <p className="mt-4 text-lg text-gray-400">
-          We love hearing from you! 🧡
+          🧡 We love hearing from you! 💜
         </p>
       </div>
     </div>

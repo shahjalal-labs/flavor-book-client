@@ -33,7 +33,7 @@ const NavContent = ({
                       </div>
                       <ul
                         tabIndex={0}
-                        className="dropdown-content menu bg-base-100 rounded-bo z-1 w-52 p-2 shadow-sm"
+                        className="dropdown-content menu bg-base-100 rounded-bo z-1 w-52 p-2 shadow-sm "
                       >
                         <li>
                           <NavLink to="/my-profile">Profile</NavLink>
@@ -75,7 +75,7 @@ const NavContent = ({
             </button>
           </div>
           <div
-            className={`bg-gray-300 w-[200px] rounded-lg absolute -left-[40px] lg:hidden p-2 ${open ? "" : "hidden"}`}
+            className={` w-[300px] rounded-lg absolute -left-[10px] lg:hidden p-2 ${open ? "" : "hidden"} bg-gradient-to-tr from-cyan-300 via-purple-500 to-accent/20 `}
           >
             {/* mobile device menu */}
             <Menu className="px-4  flex flex-col gap-1 text-gray-600 font-semibold text-lg" />

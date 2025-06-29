@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <header className=" px-4  max-container sticky z-10 top-0">
-      <nav className=" flex max-lg:flex-row-reverse items-center justify-between  p-2 rounded-xl sticky z-[1000] bg-gradient-to-br from-cyan-50 to-gray-200">
+      <nav className=" flex max-lg:flex-row-reverse items-center justify-between  p-2 rounded-xl sticky z-[1000] bg-gradient-to-br from-cyan-300/50 via-purple-500/10 to-accent/20 backdrop-blur">
         <div>
           <Brand />
         </div>
