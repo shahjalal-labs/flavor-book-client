@@ -1,9 +1,10 @@
 import { features } from "../constant";
+import AboutCard from "./About/AboutCard";
 
 const About = () => {
   return (
-    <section className="min-h-[70vh] py-0 px-6 mt-10 border bg-primary/10">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-[60vh] py-5 px-6 mt-10 border bg-primary/10 rounded-xl">
+      <div className="max--4xl mx-auto text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">
           About FlavorBook
         </h1>
@@ -15,17 +16,9 @@ const About = () => {
           share the love of cooking!
         </p>
 
-        <div className="grid md:grid-cols-2 gap-10 mt-10">
+        <div className="grid md:grid-cols-2 gap-3 mt-10">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`bg-white shadow-lg p-6 rounded-xl border-l-4 ${feature.borderColor}`}
-            >
-              <h3 className={`text-xl font-semibold mb-2 ${feature.textColor}`}>
-                {feature.icon} {feature.title}
-              </h3>
-              <p className="text-gray-700">{feature.description}</p>
-            </div>
+            <AboutCard feature={feature} key={index} />
           ))}
         </div>
       </div>
