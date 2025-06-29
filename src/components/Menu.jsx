@@ -93,7 +93,7 @@ const Menu = ({ className, isExternal }) => {
       {/* profile orders page */}
       <div className="dropdown-hover text-gray-600 font-semibold text-lg">
         <div tabIndex={0} role="button" className="bt -1">
-          <Link to="/dashboard/overview">Dashboard</Link>
+          <Link to="/dashboard">Dashboard</Link>
         </div>
       </div>
     </ul>
