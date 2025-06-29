@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footerr = () => {
   return (
-    <footer className="bg-gradient-to-tr from-cyan-50 to-teal-100/50 text-gray-800 mt-16 pt-10 pb-6 px-6 md:px-5">
+    <footer className="bg-gradient-to-bl from-purple-300/50 to-teal-100 text-gray-800 mt-16 pt-10 pb-6 px-6 md:px-5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-3 xl:grid-cols-4">
         {/* Brand Section */}
         <div className="space-y-4">
@@ -99,11 +99,14 @@ const Footerr = () => {
             <input
               type="email"
               placeholder="Your Email"
-              className="px-4 py-2 border border-orange-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="px-4 py-2 border  border-sky-300 rounded-full focus:outline-none focus:ring-2 focus:ring-sky-400"
             />
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 transition text-white py-2 px-4 rounded-md font-semibold"
+              className="bg-purple-500 hover:bg-purple-600 transition text-white py-2 px-4 rounded-full font-semibold"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
             >
               Subscribe 🍊
             </button>
@@ -112,7 +115,7 @@ const Footerr = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="mt-10 border-t border-orange-200 pt-4 text-center text-gray-500 text-sm">
+      <div className="mt-10 border-t border-purple-500 pt-4 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} FlavorBook. All rights reserved.
       </div>
     </footer>

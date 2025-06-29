@@ -13,7 +13,7 @@ const FeedbackPage = () => {
           <div
             key={i}
             className=" shadow-lg p-6 rounded-xl border hover:scale-105 transition-transform duration-300 ease-in-out border-orange-200 hover:shadow-xl
-            bg-gradient-to-br from-purple-500/30 via-sky-200/30 via-orange-300 to-cyan-500/20"
+ bg-gradient-to-br from-purple-500/30 via-sky-200/30 via-orange-300 to-cyan-500/20"
           >
             <div className="flex items-center gap-4 mb-4">
               <img
