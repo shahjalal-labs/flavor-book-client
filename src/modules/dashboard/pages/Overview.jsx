@@ -1,4 +1,5 @@
 import ProfileCard from "../../../pages/MyProfile/ProfileCard";
+import DashboardStats from "../components/DashboardStats";
 
 const Overview = () => {
   return (
@@ -8,6 +9,7 @@ const Overview = () => {
       </h1>
 
       {/* 🔢 Stats Cards */}
+      <DashboardStats />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
         <div className="bg-white p-6 rounded-xl shadow border-l-4 border-blue-500">
           <h3 className="text-lg font-semibold text-blue-600">
