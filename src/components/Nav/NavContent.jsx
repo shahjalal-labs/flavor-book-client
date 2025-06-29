@@ -3,16 +3,7 @@ import Button from "../Button";
 import { AlignJustify, Moon, Sun } from "lucide-react";
 import Menu from "../Menu";
 
-const NavContent = ({
-  loading,
-  user,
-  logout,
-  setOpen,
-  open,
-  themeLight,
-  setThemeLight,
-  themeSwither,
-}) => {
+const NavContent = ({ loading, user, logout, setOpen, open }) => {
   return (
     <div>
       <div className="flex items-center gap-1 flex-row-reverse">

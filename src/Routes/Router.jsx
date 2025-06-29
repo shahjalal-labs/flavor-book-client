@@ -17,6 +17,7 @@ import RecipeMarketLayout from "../modules/RecipieMarket/RecipeMarketLayout";
 import { RecipeMarkteRoutes } from "../modules/RecipieMarket/RecipeMarkteRoutes";
 import PaymentSuccess from "../pages/PaymentSuccess";
 import MyOrders from "../modules/Myorder/Myorders";
+import dashBoardRoutes from "../modules/dashboard/dashBoardRoute";
 
 export const router = createBrowserRouter([
   {
@@ -84,4 +85,5 @@ export const router = createBrowserRouter([
   blogRoutes,
   chefRooute,
   RecipeMarkteRoutes,
+  dashBoardRoutes,
 ]);

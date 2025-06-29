@@ -91,24 +91,10 @@ const Menu = ({ className, isExternal }) => {
         </ul>
       </div>
       {/* profile orders page */}
-      <div className="dropdown dropdown-hover text-gray-600 font-semibold text-lg">
+      <div className="dropdown-hover text-gray-600 font-semibold text-lg">
         <div tabIndex={0} role="button" className="bt -1">
-          Account
+          <Link to="/dashboard/overview">Dashboard</Link>
         </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content menu bg-base-100 rounded-bo z-1 w-52 p-2 shadow-sm"
-        >
-          <li>
-            <NavLink to="/my-profile">Profile</NavLink>
-          </li>
-          <li>
-            <NavLink to="/my-orders">My Orders</NavLink>
-          </li>
-          <li>
-            <NavLink to="/my-recipes">My Recipes</NavLink>
-          </li>
-        </ul>
       </div>
     </ul>
   );
