@@ -16,4 +16,6 @@
 5.🖼️ Prompt 5: Chef & Marketplace Concept
 
     "Split banner image showing on the left a chef holding a pan with flames, and on the right, fresh produce and spices at a farmer's market. Golden-hour lighting, balanced composition, vivid colors, and clean styling. Conceptually represents the bridge between chefs and food ingredients."
+
+6."A beautifully styled overhead image of a traditional Bangladeshi feast on a handcrafted table — featuring beef tehari, shorshe ilish, patishapta pitha, and side dishes like chutneys and salad. Brass utensils, clay pots, banana leaves, and ambient daylight from the side. Cultural, festive, and inviting — perfect for a recipe and chef marketplace with regional identity."
 ```
