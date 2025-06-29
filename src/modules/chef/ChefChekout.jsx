@@ -1,4 +1,5 @@
 import { useParams } from "react-router";
+import axios from "axios";
 import { chefs } from "./chef.constant";
 import toast from "react-hot-toast";
 
@@ -10,16 +11,41 @@ const Checkout = () => {
     return <div className="p-6">Chef not found.</div>;
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Implement booking logic here
     toast.success(`🎉 Booking confirmed for ${chef.name}!`, {
       duration: 3000,
     });
+    const { data: response } = await axios.post(
+      "http://localhost:5000/create-ssl-payment",
+      {
+        total_amount: 100,
+        currency: "BDT",
+        shipping_method: "Courier",
+        product_name: "Computer.",
+        product_category: "Electronic",
+        product_profile: "general",
+        cus_name: "Customer Name",
+        cus_email: "customer@example.com",
+        cus_add1: "Dhaka",
+        cus_add2: "Dhaka",
+        cus_city: "Dhaka",
+        cus_state: "Dhaka",
+        cus_postcode: "1000",
+        cus_country: "Bangladesh",
+        cus_phone: "01711111111",
+        cus_fax: "01711111111",
+      },
+    );
+    console.log(response, "ChefChekout.jsx", 21);
+    if (response.gatewayUrl) {
+      window.location.replace(response.gatewayUrl);
+    }
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md mt-10">
+    <div className=" p-6  bg-white rounded-lg shadow-md mt-10 border">
       <h1 className="text-2xl font-bold mb-4">Checkout</h1>
       <div className="mb-4">
         <p className="text-lg font-semibold">{chef.name}</p>
@@ -31,7 +57,7 @@ const Checkout = () => {
           <label className="block mb-1">Your Name</label>
           <input
             type="text"
-            className="w-full border px-3 py-2 rounded"
+            className="w-full   border px-3 py-2 rounded"
             required
           />
         </div>
@@ -39,7 +65,7 @@ const Checkout = () => {
           <label className="block mb-1">Email</label>
           <input
             type="email"
-            className="w-full border px-3 py-2 rounded"
+            className="w-full   border px-3 py-2 rounded"
             required
           />
         </div>
@@ -47,7 +73,7 @@ const Checkout = () => {
           <label className="block mb-1">Booking Date</label>
           <input
             type="date"
-            className="w-full border px-3 py-2 rounded"
+            className="w-full   border px-3 py-2 rounded"
             required
           />
         </div>

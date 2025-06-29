@@ -12,6 +12,7 @@ import {
 import "aos/dist/aos.css";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.config";
+import axios from "axios";
 
 export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
@@ -56,14 +57,23 @@ const AuthProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setLoading(false);
+      if (currentUser?.email) {
+        axios
+          .post(
+            "http://localhost:5000/api/v1/jwt",
+            {
+              email: currentUser.email,
+            },
+            {
+              withCredentials: true,
+            },
+          )
+          .then((res) => console.log("res", res.data))
+          .catch((err) => console.log("err", err));
+      }
     });
 
     return () => {

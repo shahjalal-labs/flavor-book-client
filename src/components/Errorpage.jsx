@@ -7,9 +7,9 @@ const Errorpage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="flex-center min-h-[90vh] flex-col  ">
+      <div className="flex-center min-h-[90vh] flex-col px-3 ">
         <div className="flex-center  flex-col  p-6 sm:p-20 rounded-2xl drop-shadow-2xl space-y-9 bg-gray-200">
-          <h1 className="text-red-500 text-2xl">
+          <h1 className="text-red-500 sm:text-2xl">
             {error?.statusText || error?.message}
           </h1>
 

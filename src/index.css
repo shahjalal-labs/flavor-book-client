@@ -15,7 +15,7 @@
   }
 
   .max-container {
-    @apply max-w-[1440px] mx-auto max-sm:px-1 sm:px-8;
+    @apply max-w-[1500px] mx-auto max-sm:px-1 sm:px-8;
   }
 
   .grad-orange {

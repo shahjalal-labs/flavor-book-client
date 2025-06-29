@@ -4,6 +4,7 @@ import loginAnimation from "./loginAnimation.json";
 import loginAnimation2 from "./loginAnimation2.json";
 import loginAnimation3 from "./loginAnimation3.json";
 import profileAnimation from "./profileAnimation.json";
+import cartLottie from "./cart.json";
 
 export {
   male_cooking,
@@ -12,4 +13,5 @@ export {
   loginAnimation2,
   loginAnimation3,
   profileAnimation,
+  cartLottie,
 };

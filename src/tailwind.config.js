@@ -11,6 +11,12 @@ export default {
         skyy: "#38bdf8",
         orangy: "#fb923c",
       },
+      screens: {
+        "mid-range": {
+          min: "1010px",
+          max: "1065px",
+        },
+      },
     },
   },
   plugins: [],

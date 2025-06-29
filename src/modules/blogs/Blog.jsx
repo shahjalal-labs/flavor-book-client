@@ -1,15 +1,16 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const Blog = ({ blog }) => {
+  const naviagate = useNavigate();
   return (
     <div
       key={blog.id}
       className="bg-white rounded-xl shadow hover:shadow-2xl transition-shadow duration-300 border border-orange-100 hover:border-orange-400"
     >
       <div className="p-5 flex flex-col h-full justify-between">
-        <div>
+        <div onClick={() => naviagate(`/blogs/${blog.id}`)}>
           <h2 className="text-xl font-bold text-gray-800 hover:text-orange-600 transition-colors duration-200 mb-2">
-            <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
+            <Link to={`/blogs/${blog.id}`}>{blog.title}</Link>
           </h2>
           <p className="text-gray-600 text-sm mb-4">{blog.preview}</p>
           <div className="flex items-center gap-3 mb-2">

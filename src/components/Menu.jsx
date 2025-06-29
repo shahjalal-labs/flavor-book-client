@@ -1,9 +1,10 @@
 import { NavLink, Link } from "react-router";
 import { links } from "../constant";
+import { ChevronDown } from "lucide-react";
 
 const Menu = ({ className, isExternal }) => {
   return (
-    <ul className={`${className} w-full flex lg:items-center `}>
+    <ul className={`${className} w-full flex lg:items-center order`}>
       {links.map((link) =>
         isExternal ? (
           <Link key={link.label} to={link.path}>
@@ -16,8 +17,15 @@ const Menu = ({ className, isExternal }) => {
         ),
       )}
       <div className="dropdown dropdown-hover">
-        <div tabIndex={0} role="button" className="bt -1">
-          Recipes
+        <div
+          tabIndex={0}
+          role="button"
+          className="flex items-center justify-center gap-[1px]"
+        >
+          <span>Recipes</span>
+          <span className="mt-1">
+            <ChevronDown />
+          </span>
         </div>
         <ul
           tabIndex={0}
@@ -79,6 +87,26 @@ const Menu = ({ className, isExternal }) => {
           </li>
           <li>
             <NavLink to="/recipe-market/create">Start Selling</NavLink>
+          </li>
+        </ul>
+      </div>
+      {/* profile orders page */}
+      <div className="dropdown dropdown-hover text-gray-600 font-semibold text-lg">
+        <div tabIndex={0} role="button" className="bt -1">
+          Account
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content menu bg-base-100 rounded-bo z-1 w-52 p-2 shadow-sm"
+        >
+          <li>
+            <NavLink to="/my-profile">Profile</NavLink>
+          </li>
+          <li>
+            <NavLink to="/my-orders">My Orders</NavLink>
+          </li>
+          <li>
+            <NavLink to="/my-recipes">My Recipes</NavLink>
           </li>
         </ul>
       </div>

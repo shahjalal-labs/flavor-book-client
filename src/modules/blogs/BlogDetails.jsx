@@ -1,6 +1,7 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { Helmet } from "react-helmet-async";
 import { blogs } from "./blog.constant";
+import Button from "../../components/Button";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -39,6 +40,13 @@ const BlogDetails = () => {
       </div>
 
       <p className="text-lg text-gray-700 mb-8">{blog.preview}</p>
+      <button
+        className={
+          "bg-orange-100 px-6 py-2 rounded-full text-gray-400 font-semibold"
+        }
+      >
+        <Link to="/recipe-market">Get Necessary Tools 🥄 </Link>
+      </button>
 
       <div className="mt-10">
         <h2 className="text-xl font-semibold mb-2">💬 Comments</h2>

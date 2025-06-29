@@ -61,12 +61,7 @@ const Recipe = ({ recipe, setRecipes = () => {}, recipes = [] }) => {
           <p className="text-sm text-gray-600">Likes: {likeCount}</p>
           {pathname == "/my-recipes" && (
             <div className="flex gap-3 flex-col">
-              <div
-                className="flex-1 text-white"
-                onClick={() =>
-                  document.getElementById("my_modal_1").showModal()
-                }
-              >
+              <div className="flex-1 text-white">
                 <Link to={`/update/${recipe._id}`}>
                   <Button label={"Update "} className={"w-full"} />
                 </Link>

@@ -2,10 +2,10 @@ const RecipeMarketHeader = () => {
   return (
     <section className=" pt-2 pb-4 mb-14 px-2 text-center relative overflow-hidden">
       <div className="w-full mx-auto">
-        <h1 className="text-2xl md:text-2xl font-extrabold text-green-700  mb-4 leading-tight animate-fade-in-up">
+        <h1 className="text-xl sm:text-2xl md:text-2xl font-extrabold text-green-700  mb-4 leading-tight animate-fade-in-up">
           🛒 Recipestore – Recipe Ingredients
         </h1>
-        <p className="text-lg  text-gray-400  mb-6 animate-fade-in-up delay-100 rounded-xl">
+        <p className="sm:text-lg  text-gray-400  mb-6 animate-fade-in-up delay-100 rounded-xl">
           Everything you need to bring your recipes to life! 🍅🥕🧄 All
           ingredients are
           <span className="font-semibold text-emerald-600 dark:text-emerald-400">

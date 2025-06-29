@@ -7,7 +7,9 @@ import { cookingAnimation } from "../animation";
 const Brand = ({ className }) => {
   return (
     <>
-      <div className={`w-[220px] flex items-center gap-2 ${className || ""}`}>
+      <div
+        className={`sm:min-w-[270px]  flex max-lg:flex-row-reverse items-center gap-2 ${className || ""}`}
+      >
         {/* <img src={logo} width={25} className="rounded-full" /> */}
         <div className="w-10 max-sm:w-8">
           <LottieAnimation animation={cookingAnimation} />
@@ -23,7 +25,8 @@ const Brand = ({ className }) => {
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1800}
-              />
+              />{" "}
+              {/* Flavor */}
             </span>
             <motion.span
               animate={{

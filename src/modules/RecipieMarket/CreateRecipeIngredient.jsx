@@ -18,8 +18,8 @@ const CreateRecipeIngredient = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-8 bg-white  rounded-xl shadow-md mt-10">
-      <h2 className="text-3xl max-sm:text-2xl font-bold mb-6 text-center text-green-600">
+    <div className="max-w-3xl mx-auto p-8 bg-white  rounded-xl shadow-md mt-10 max-sm:mt-0">
+      <h2 className="text-3xl max-sm:text-xl font-bold mb-6 text-center text-green-600">
         📦 Add Ingredient for Sale
       </h2>
 

@@ -15,6 +15,8 @@ import { authRoutes } from "../modules/auth/authRoutes";
 import recipeRoutes from "../modules/recipe/recipeRoutes";
 import RecipeMarketLayout from "../modules/RecipieMarket/RecipeMarketLayout";
 import { RecipeMarkteRoutes } from "../modules/RecipieMarket/RecipeMarkteRoutes";
+import PaymentSuccess from "../pages/PaymentSuccess";
+import MyOrders from "../modules/Myorder/Myorders";
 
 export const router = createBrowserRouter([
   {
@@ -27,9 +29,21 @@ export const router = createBrowserRouter([
         // loader: () => fetch("http://localhost:5000/api/v1/recipes?limit=6"),
         loader: () =>
           fetch(
-            "https://worlds-recipes-sharing-server.vercel.app/api/v1/recipes?limit=6",
+            // "https://worlds-recipes-sharing-server.vercel.app/api/v1/recipes?limit=6",
+            "http://localhost:5000/api/v1/recipes?limit=6",
+            {
+              credentials: "include",
+            },
           ),
         element: <App />,
+      },
+      {
+        path: "success",
+        element: <PaymentSuccess />,
+      },
+      {
+        path: "my-orders",
+        element: <MyOrders />,
       },
       ...recipeRoutes,
       {

@@ -93,7 +93,6 @@ Here's a high-level overview of the project's file structure:
 
 ### 🍲 Recipes
 
-
 - `/add-recipe` → `AddRecipe.jsx`
 - `/my-recipes` → `MyRecipes.jsx`
 - `/recipe/:id` → `RecipeDetails.jsx`

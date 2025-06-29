@@ -24,7 +24,7 @@ const IngredientDetails = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10 mt-3">
+    <div className="max-sm:px-3   md:px6 py-10 mt-3 ">
       <button
         onClick={() => navigate(-1)}
         className="flex items-center text-blue-600 hover:underline mb-6"
@@ -32,14 +32,14 @@ const IngredientDetails = () => {
         <FaArrowLeft className="mr-2" /> Back
       </button>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6">
         <img
           src={ingredient.image}
           alt={ingredient.name}
           className="w-full h-72 object-cover rounded-md shadow"
         />
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">
+          <h2 className="text-3xl max-sm:text-2xl font-bold text-gray-800 dark:text-white mb-2">
             {ingredient.name}
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
