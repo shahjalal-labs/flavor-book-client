@@ -412,4 +412,56 @@ const boxes = [
     number_of_reviews: 146,
   },
 ];
-export { links, boxes };
+// about us page features
+const features = [
+  {
+    icon: "🌍",
+    title: "Global Cuisines",
+    borderColor: "border-orange-400",
+    textColor: "text-orange-600",
+    description:
+      "Explore recipes from diverse cultures, from Bangladeshi Begun Vorta to Italian Lasagna. Taste the world, one dish at a time!",
+  },
+  {
+    icon: "👩‍🍳",
+    title: "Community Driven",
+    borderColor: "border-yellow-400",
+    textColor: "text-yellow-600",
+    description:
+      "Share your unique recipes and get inspired by other home cooks and chefs. Build your digital cookbook with FlavorBook!",
+  },
+  {
+    icon: "📖",
+    title: "Personalized Recipe Book",
+    borderColor: "border-teal-400",
+    textColor: "text-teal-600",
+    description:
+      "Save your favorite recipes in one place. Whether it’s Grandma’s curry or your own twist on tacos, FlavorBook is your digital cookbook.",
+  },
+  {
+    icon: "🔍",
+    title: "Easy to Share & Discover",
+    borderColor: "border-purple-400",
+    textColor: "text-purple-600",
+    description:
+      "Share your best creations with the world and discover trending recipes from passionate food lovers across the globe.",
+  },
+  {
+    icon: "❤️",
+    title: "Smart Like System",
+    borderColor: "border-pink-400",
+    textColor: "text-pink-600",
+    description:
+      "Recipes rise to the top based on community love. The more likes, the more visibility. No ads, just real taste-based ranking.",
+  },
+  {
+    icon: "🌗",
+    title: "Dark & Light Themes",
+    borderColor: "border-gray-400",
+    textColor: "text-gray-700",
+    description:
+      "Enjoy browsing recipes in your preferred style with our sleek dark and light mode toggle. Your eyes will thank you!",
+  },
+];
+
+export { links, boxes, features };
