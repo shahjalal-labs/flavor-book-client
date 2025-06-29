@@ -18,7 +18,7 @@ const Overview = () => {
         User Details
       </h2>
 
-      <div className="flex flex-col lg:flex-row justify-around items-center border bg-purple-50 rounded-xl shadow-lg">
+      <div className="flex flex-col lg:flex-row justify-around items-center bg-purple-50 rounded-xl shadow-lg">
         <ProfileCard />
         <div className="flex-1 max-w-[400px]">
           <LottieAnimation animation={profileAnimation} />

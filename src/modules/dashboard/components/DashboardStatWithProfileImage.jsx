@@ -1,10 +1,15 @@
+import { useContext } from "react";
+import { AuthContext } from "../../../provider/AuthProvider";
+
 const DashboardStatWithProfileImage = () => {
+  const { user } = useContext(AuthContext);
+
   return (
     <div className="stat ">
       <div className="stat-figure text-secondary">
         <div className="avatar avatar-online">
           <div className="w-16 rounded-full">
-            <img src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp" />
+            <img src={user?.photoURL} />
           </div>
         </div>
       </div>

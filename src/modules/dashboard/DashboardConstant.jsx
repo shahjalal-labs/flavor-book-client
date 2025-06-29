@@ -1,7 +1,7 @@
 export const statsData = [
   {
-    title: "Total Likes",
-    value: "25.6K",
+    title: "Total Recipes",
+    value: "11",
     desc: "21% more than last month",
     color: "primary",
     icon: (
@@ -21,9 +21,9 @@ export const statsData = [
     ),
   },
   {
-    title: "Page Views",
-    value: "2.6M",
-    desc: "21% more than last month",
+    title: "Total Chefs",
+    value: "9",
+    desc: "11% more than last year",
     color: "secondary",
     icon: (
       <svg

@@ -1,11 +1,7 @@
-import { useContext } from "react";
-import { AuthContext } from "../../../provider/AuthProvider";
 import { statsData } from "../DashboardConstant";
 import DashboardStatWithProfileImage from "./DashboardStatWithProfileImage";
 
 const DashboardStats = () => {
-  const { user } = useContext(AuthContext);
-
   return (
     <div className="stats shadow   w-full">
       <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3">
