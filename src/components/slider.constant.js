@@ -1,6 +1,6 @@
 const slides = [
   {
-    src: "https://api.deepai.org/job-view-file/5015ac97-0c75-4ea2-b40e-0039b12e850f/outputs/output.jpg",
+    src: "https://images.deepai.org/art-image/1c7d399d10664216b60edf8c33452897/split-banner-image-showing-on-the-left-a-chef-holding.jpg",
     heading: "Unleash Culinary Brilliance",
     description:
       "Step into FlavorBook and explore bold, world-class recipes crafted with precision, creativity, and passion by chefs worldwide.",

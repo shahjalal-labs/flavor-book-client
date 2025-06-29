@@ -1,17 +1,12 @@
+# 📁 Project Structure
+
+```bash
 .
 ├── 200.html
 ├── bun.lock
-├── dist
-│   ├── 200.html
-│   ├── assets
-│   │   ├── banner3-CqKNlaJH.jpeg
-│   │   ├── index-j2cJfTm6.js
-│   │   └── index-TqI0qufI.css
-│   ├── CNAME
-│   ├── index.html
-│   └── vite.svg
 ├── eslint.config.js
 ├── freelance.md
+├── imageGenerationPrompt.md
 ├── index.html
 ├── package.json
 ├── PKGBUILD
@@ -48,7 +43,15 @@
 │   │   │   └── output.jpg
 │   │   ├── index.js
 │   │   ├── logo.png
-│   │   └── notfound3.jpg
+│   │   ├── notfound3.jpg
+│   │   └── screenshots
+│   │       ├── preview
+│   │       │   ├── desktop
+│   │       │   │   ├── desktopPrev.pdf
+│   │       │   │   └── desktopPrev.png
+│   │       │   ├── laptop
+│   │       │   └── mobile
+│   │       └── ss-10-48-41-AM_29-06-25.png
 │   ├── bun.lock
 │   ├── components
 │   │   ├── Banner.jsx
@@ -64,7 +67,9 @@
 │   │   ├── Newsletter.jsx
 │   │   ├── Recipe.jsx
 │   │   ├── Recipes.jsx
-│   │   └── Slider.jsx
+│   │   ├── slider.constant.js
+│   │   ├── Slider.jsx
+│   │   └── SliderOverlay.jsx
 │   ├── constant.jsx
 │   ├── firebase
 │   │   └── firebase.config.js
@@ -141,4 +146,6 @@
 ├── structure.md
 └── vite.config.js
 
-23 directories, 119 files
+26 directories, 118 files
+
+```

@@ -27,7 +27,7 @@ const Home = () => {
             deleteSpeed={50}
             delaySpeed={1800}
           />
-          <span className="hidden sm:block text-lg font-normal mt-1 text-darkbase ">
+          <span className="hidden sm:block text-lg font-normal mt-1 text-cyan-800 ">
             Check out the ones that everyone’s been liking lately – maybe you’ll
             find your next favorite dish.
           </span>

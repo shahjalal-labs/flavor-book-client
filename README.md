@@ -396,3 +396,9 @@ Welcome to **FlavorBook**, a dynamic recipe-sharing platform designed to connect
 
 21 directories, 111 files
 ```
+
+![Screenshot](src/assets/screenshots/ss-10-48-41-AM_29-06-25.png)
+
+### home page preview:
+
+![Screenshot](src/assets/screenshots/preview/desktop/desktopPrev.png)

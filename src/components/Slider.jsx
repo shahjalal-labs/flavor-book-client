@@ -1,42 +1,39 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import SliderOverlay from "./SliderOverlay";
 
 const SwiperSlider = ({
   slides = [],
   delay = 1500,
-  heightClass = "max-h-[600px] ",
+  heightClass = "max-h-[600px]",
   showNavigation = true,
   showPagination = true,
 }) => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      spaceBetween={0}
-      navigation={showNavigation}
-      pagination={showPagination ? { clickable: true } : false}
-      loop={true}
-      autoplay={{
-        delay,
-        disableOnInteraction: false,
-      }}
+    <Carousel
+      showArrows={showNavigation}
+      autoPlay={true}
+      infiniteLoop={true}
+      showThumbs={false}
+      showStatus={false}
+      interval={delay}
+      transitionTime={600}
+      stopOnHover={true}
+      showIndicators={showPagination}
     >
       {slides.map((slide, index) => (
-        <SwiperSlide key={index} className="relative">
+        <div key={index} className="relative">
           <img
             src={slide.src}
             alt={`Slide ${index + 1}`}
-            className={`w-full ${heightClass} object-cover rounded-xl shadow-xl`}
+            className={`w-full object-cover rounded-xl shadow-xl ${heightClass}`}
           />
           {(slide.heading || slide.description) && (
             <SliderOverlay slide={slide} />
           )}
-        </SwiperSlide>
+        </div>
       ))}
-    </Swiper>
+    </Carousel>
   );
 };
 
