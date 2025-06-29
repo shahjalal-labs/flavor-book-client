@@ -37,11 +37,11 @@ const RecipeDetails = ({ currentUser }) => {
 
   return (
     <>
-      <h2 className="text-xl sm:text-2xl font-semibold mb-8 text-gray-500 mt-10 text-center">
-        <span className="text-sky-500">{likeCount || "No"}</span>
+      <h2 className="text-xl sm:text-2xl font-semibold mb-8 text-gray-500 mt-10 text-center ">
+        <span>{likeCount || "No"}</span>
         &nbsp; Foodies love this recipe.
       </h2>
-      <div className="max-w-4xl mx-auto p-6  rounded-xl shadow-2xl">
+      <div className="max-w-4xl mx-auto p-6  rounded-xl shadow-2xl bg-gradient-to-br from-purple-500/30 via-sky-200/30 via-orange-300 to-cyan-500/20">
         <Helmet>
           <title> Recipe Details | FlavorBook</title>
         </Helmet>
@@ -82,7 +82,7 @@ const RecipeDetails = ({ currentUser }) => {
 
         <div className="mb-4">
           <strong>Ingredients:</strong>
-          <ul className="bg-gray-100 p-2 rounded mt-1 space-y-1 dark:text-sky-400">
+          <ul className=" p-2 rounded mt-1 space-y-1 text-sky-900">
             {recipe.ingredients.map((ingredient, index) => (
               <li key={index}>
                 <span className="font-medium text-sky-700">{index + 1}.</span>{" "}
