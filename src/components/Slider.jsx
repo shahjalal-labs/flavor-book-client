@@ -8,7 +8,7 @@ import SliderOverlay from "./SliderOverlay";
 const SwiperSlider = ({
   slides = [],
   delay = 1500,
-  heightClass = "max-h-[600px] sm:h-[50vh]",
+  heightClass = "max-h-[600px] ",
   showNavigation = true,
   showPagination = true,
 }) => {

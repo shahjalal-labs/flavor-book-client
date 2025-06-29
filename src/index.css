@@ -25,7 +25,14 @@
     @apply bg-gradient-to-l from-purple-100 to-purple-50;
   }
 }
-
+@theme {
+  --color-primary: #3b82f6;
+  --color-accent: #9333ea;
+  --color-secondary: #f97316;
+  --color-tertiary: #f43f5e;
+  --color-darkbase: #0f172a;
+  --color-lightbase: #f9fafb;
+}
 .active {
   color: red;
 }

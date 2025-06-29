@@ -47,7 +47,7 @@ const Recipe = ({ recipe, setRecipes = () => {}, recipes = [] }) => {
           duration: 0.1,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         }}
-        className="rounded-lg hover:shadow-md transition duration-300 max-w-[350px] shadow-xl bg-gradient-to-b from-gray-300 to-gray-100 max-sm:min-w-[300px] "
+        className="rounded-lg hover:shadow-md transition duration-300 max-w-[350px] shadow-xl bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 max-sm:min-w-[300px] "
       >
         <img
           src={image || "https://via.placeholder.com/400x250?text=No+Image"}
