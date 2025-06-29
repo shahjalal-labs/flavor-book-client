@@ -34,7 +34,8 @@
   --color-lightbase: #f9fafb;
 }
 .active {
-  color: red;
+  color: green;
+  text-decoration: underline;
 }
 
 .hover-effect {

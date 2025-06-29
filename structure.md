@@ -102,6 +102,17 @@
 │   │   │   ├── Chefs.jsx
 │   │   │   ├── CreateChef.jsx
 │   │   │   └── UpdateChef.jsx
+│   │   ├── dashboard
+│   │   │   ├── components
+│   │   │   │   ├── DashboardSidebar.jsx
+│   │   │   │   ├── DashboardStats.jsx
+│   │   │   │   ├── DashboardStatWithProfileImage.jsx
+│   │   │   │   └── SingleState.jsx
+│   │   │   ├── DashboardConstant.jsx
+│   │   │   ├── DashboardLayout.jsx
+│   │   │   ├── dashBoardRoute.jsx
+│   │   │   └── pages
+│   │   │       └── Overview.jsx
 │   │   ├── Myorder
 │   │   │   ├── Myorder.jsx
 │   │   │   ├── Myorders.jsx
@@ -129,6 +140,8 @@
 │   │   ├── Footerr.jsx
 │   │   ├── ForgotPassword.jsx
 │   │   ├── Login.jsx
+│   │   ├── MyProfile
+│   │   │   └── ProfileCard.jsx
 │   │   ├── MyProfile.jsx
 │   │   ├── MyRecipes.jsx
 │   │   ├── NoRecipe.jsx
@@ -148,6 +161,6 @@
 ├── structure.md
 └── vite.config.js
 
-28 directories, 118 files
+32 directories, 127 files
 
 ```
