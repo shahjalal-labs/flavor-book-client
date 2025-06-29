@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 
 const Menu = ({ className, isExternal }) => {
   return (
-    <ul className={`${className} w-full flex lg:items-center border `}>
+    <ul className={`${className} w-full flex lg:items-center `}>
       {links.map((link) =>
         isExternal ? (
           <Link key={link.label} to={link.path}>
@@ -20,7 +20,7 @@ const Menu = ({ className, isExternal }) => {
         <div
           tabIndex={0}
           role="button"
-          className="flex items-center justify-center gap-[1px]"
+          className="flex items-center justify-enter gap-[1px]"
         >
           <span>Recipes</span>
           <span className="mt-1">

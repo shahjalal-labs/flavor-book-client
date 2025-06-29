@@ -8,7 +8,7 @@ import LottieAnimation from "../animation/Walking";
 import { loginAnimation, loginAnimation2, loginAnimation3 } from "../animation";
 
 const LoginPage = () => {
-  const { googleLogin, login } = useContext(AuthContext);
+  const { googleLogin, login, loading } = useContext(AuthContext);
   const [error, setError] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
@@ -117,7 +117,11 @@ const LoginPage = () => {
             </Link>
 
             {/* Submit Button */}
-            <button type="submit" className="btn btn-primary w-full mt-4">
+            <button
+              type="submit"
+              className="btn btn-primary w-full mt-4"
+              disabled={loading}
+            >
               Log In
             </button>
           </form>
@@ -125,13 +129,14 @@ const LoginPage = () => {
           <button
             onClick={handleGoogleLogin}
             className="btn btn-outline w-full mt-4"
+            disabled={loading}
           >
             Sign in with Google
           </button>
 
           <div className="mt-4 flex justify-between text-sm">
             <p>
-              Don't have an account?{" "}{" "}
+              Don't have an account?{" "}
               <Link to="/auth/register" className="text-primary ml-2">
                 Sign Up
               </Link>

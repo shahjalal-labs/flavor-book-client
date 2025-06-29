@@ -75,7 +75,7 @@ const NavContent = ({
             </button>
           </div>
           <div
-            className={` w-[300px] rounded-lg absolute -left-[10px] lg:hidden p-2 ${open ? "" : "hidden"} bg-gradient-to-tr from-cyan-300 via-purple-500 to-accent/20 `}
+            className={` w-[250px] rounded-lg absolute -left-[10px] lg:hidden p-2 ${open ? "" : "hidden"} bg-gradient-to-tr from-cyan-50  to-purple-200`}
           >
             {/* mobile device menu */}
             <Menu className="px-4  flex flex-col gap-1 text-gray-600 font-semibold text-lg" />
