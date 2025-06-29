@@ -1,17 +1,16 @@
 import { Outlet } from "react-router";
 import Nav from "../../components/Nav";
-import BlogSidebar from "../../modules/blogs/BlogSidebar";
 import DashboardSidebar from "./components/DashboardSidebar";
 
 const DashboardLayout = () => {
   return (
-    <div className="mx-auto max-w-7xl border">
+    <div className="mx-auto max-w-7xl ">
       <Nav />
-      <div className="grid ustify-items-center grid-cols-12 sm:p-7">
-        <div className="col-span-4 border border-green-500">
+      <div className="grid  grid-cols-12 gap-3 sm:p-7">
+        <div className="col-span-4 lg:col-span-3 ">
           <DashboardSidebar />
         </div>
-        <div className="col-span-8 border border-red-500">
+        <div className="col-span-8 lg:col-span-9 min-h-[70vh] flex-center">
           <Outlet />
         </div>
       </div>
