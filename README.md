@@ -421,10 +421,30 @@ Welcome to **FlavorBook**, a dynamic recipe-sharing platform designed to connect
 
 #### Desktop view:
 
+##### Overview:
+
 ![Screenshot](src/assets/screenshots/preview/desktop/Dashboard/Overview/Overview.png)
 
 ---
 
-#### All Recipes:
+##### All Recipes:
 
 ![Screenshot](src/assets/screenshots/preview/desktop/Dashboard/AllRecipes/AllRecipes.png)
+
+##### Chefs:
+
+![Screenshot](src/assets/screenshots/preview/desktop/Dashboard/Chefs/Chefs.png)
+
+##### My Recipes:
+
+![Screenshot](src/assets/screenshots/preview/desktop/Dashboard/MyRecipes/MyRecipes.png)
+
+##### Recipe Market:
+
+![Screenshot](src/assets/screenshots/preview/desktop/Dashboard/RecipeMarket/RecipeMarket.png)
+
+---
+
+## 🌐 Live Site
+
+#### please visit [flavorbook.surge.sh](https://flavorbook.surge.sh/) for full website view.
