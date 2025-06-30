@@ -13,9 +13,9 @@ const DashboardStatWithProfileImage = () => {
           </div>
         </div>
       </div>
-      <div className="stat-value">86%</div>
-      <div className="stat-title">Tasks done</div>
-      <div className="stat-desc text-secondary">31 tasks remaining</div>
+      <div className="stat-value">16%</div>
+      <div className="stat-title">Impct created</div>
+      <div className="stat-desc text-secondary">84 % impact remaining</div>
     </div>
   );
 };

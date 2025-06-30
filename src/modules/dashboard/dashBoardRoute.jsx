@@ -1,4 +1,5 @@
 import DashboardLayout from "./DashboardLayout";
+import DashboardAllRecipes from "./pages/DashboardAllRecipes";
 import Overview from "./pages/Overview";
 
 const dashBoardRoutes = {
@@ -8,6 +9,10 @@ const dashBoardRoutes = {
     {
       index: true,
       element: <Overview />,
+    },
+    {
+      path: "all-recipes",
+      element: <DashboardAllRecipes />,
     },
   ],
 };
