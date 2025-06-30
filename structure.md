@@ -38,6 +38,9 @@
 │   │   │   ├── banner2.jpeg
 │   │   │   ├── banner3.jpeg
 │   │   │   ├── banner_indicator.jpg
+│   │   │   ├── logo.jpg
+│   │   │   ├── logoRounded.jpg
+│   │   │   ├── logoUpdated.jpg
 │   │   │   ├── long_banner.jpg
 │   │   │   ├── looka_logo_black.svg
 │   │   │   └── output.jpg
@@ -47,8 +50,37 @@
 │   │   └── screenshots
 │   │       ├── preview
 │   │       │   ├── desktop
+│   │       │   │   ├── Dashboard
+│   │       │   │   │   ├── AllRecipes
+│   │       │   │   │   │   ├── AllRecipes.pdf
+│   │       │   │   │   │   └── AllRecipes.png
+│   │       │   │   │   ├── Chefs
+│   │       │   │   │   │   ├── Chefs.pdf
+│   │       │   │   │   │   └── Chefs.png
+│   │       │   │   │   ├── MyRecipes
+│   │       │   │   │   │   ├── MyRecipes.pdf
+│   │       │   │   │   │   └── MyRecipes.png
+│   │       │   │   │   ├── Overview
+│   │       │   │   │   │   ├── Overview.pdf
+│   │       │   │   │   │   └── Overview.png
+│   │       │   │   │   └── RecipeMarket
+│   │       │   │   │       ├── RecipeMarket.pdf
+│   │       │   │   │       └── RecipeMarket.png
 │   │       │   │   ├── desktopPrev.pdf
-│   │       │   │   └── desktopPrev.png
+│   │       │   │   ├── desktopPrev.png
+│   │       │   │   ├── HomePage
+│   │       │   │   │   ├── Homepage.pdf
+│   │       │   │   │   └── Homepage.png
+│   │       │   │   └── Recipe
+│   │       │   │       ├── AddRecipe
+│   │       │   │       │   ├── AddRecipe.pdf
+│   │       │   │       │   └── AddRecipe.png
+│   │       │   │       ├── AllRecipe
+│   │       │   │       │   ├── AllRecipePage.pdf
+│   │       │   │       │   └── AllRecipePage.png
+│   │       │   │       └── MyRecipe
+│   │       │   │           ├── MyRecipe.pdf
+│   │       │   │           └── MyRecipe.png
 │   │       │   ├── laptop
 │   │       │   └── mobile
 │   │       └── ss-10-48-41-AM_29-06-25.png
@@ -165,6 +197,6 @@
 ├── structure.md
 └── vite.config.js
 
-32 directories, 131 files
+43 directories, 152 files
 
 ```

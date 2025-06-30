@@ -1,4 +1,5 @@
 import BlogsLayout from "../../Layout/BlogsLayout";
+import PrivateRoute from "../../Routes/PrivateRoute";
 import BlogDetails from "./BlogDetails";
 import Blogs from "./Blogs";
 import CreateBlog from "./CreateBlog";
@@ -17,7 +18,11 @@ export const blogRoutes = {
     },
     {
       path: "create",
-      element: <CreateBlog />,
+      element: (
+        <PrivateRoute>
+          <CreateBlog />
+        </PrivateRoute>
+      ),
     },
   ],
 };

@@ -401,4 +401,4 @@ Welcome to **FlavorBook**, a dynamic recipe-sharing platform designed to connect
 
 ### home page preview:
 
-![Screenshot](src/assets/screenshots/preview/desktop/desktopPrev.png)
+![Screenshot](/run/media/sj/developer/web/L1B11/10mi/ass/ass-client/src/assets/screenshots/preview/desktop/HomePage/Homepage.png)
