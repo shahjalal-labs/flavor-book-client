@@ -10,7 +10,6 @@ const DashboardAllRecipes = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     axios
       .get("http://localhost:5000/api/v1/recipes")
       .then((res) => {
@@ -19,7 +18,7 @@ const DashboardAllRecipes = () => {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Error fetching recipes:", err);
+        console.error("Fetch error:", err);
         setLoading(false);
       });
   }, []);
@@ -56,45 +55,38 @@ const DashboardAllRecipes = () => {
     setRecipes(filtered);
   }, [initialRecipes, selectedCuisine, sortOption]);
 
-  if (loading) {
-    return (
-      <div className="text-center py-20 text-sky-500">Loading recipes...</div>
-    );
-  }
-
   return (
-    <div className="p-6 bg-gradient-to-br from-cyan-50 via-white to-purple-50 rounded-xl shadow">
+    <div className="w-full p-4 space-y-6">
       <Helmet>
-        <title>Dashboard Recipes || FlavorBook</title>
+        <title>Dashboard – All Recipes</title>
       </Helmet>
 
-      <h1 className="text-3xl font-bold text-center text-purple-600 mb-6">
+      <h2 className="text-2xl font-bold text-cyan-600 text-center">
         Dashboard: All Recipes
-      </h1>
+      </h2>
 
-      {/* Filters */}
-      <div className="flex flex-wrap items-center gap-4 justify-center mb-6">
+      {/* Filter & Sort */}
+      <div className="flex flex-col md:flex-row justify-center gap-4">
         <div>
-          <label className="font-medium text-cyan-700 mr-2">Cuisine:</label>
+          <label className="font-medium text-purple-600 mr-2">Cuisine:</label>
           <select
+            className="border border-cyan-400 rounded px-3 py-1"
             value={selectedCuisine}
             onChange={(e) => setSelectedCuisine(e.target.value)}
-            className="select select-bordered border-cyan-300 text-gray-800"
           >
-            {cuisineOptions.map((cuisine, i) => (
-              <option key={i} value={cuisine}>
+            {cuisineOptions.map((cuisine, index) => (
+              <option key={index} value={cuisine}>
                 {cuisine}
               </option>
             ))}
           </select>
         </div>
-
         <div>
-          <label className="font-medium text-purple-700 mr-2">Sort by:</label>
+          <label className="font-medium text-purple-600 mr-2">Sort by:</label>
           <select
+            className="border border-purple-400 rounded px-3 py-1"
             value={sortOption}
             onChange={(e) => setSortOption(e.target.value)}
-            className="select select-bordered border-purple-300 text-gray-800"
           >
             <option value="name-asc">Name: A–Z</option>
             <option value="name-desc">Name: Z–A</option>
@@ -104,10 +96,10 @@ const DashboardAllRecipes = () => {
         </div>
       </div>
 
-      {/* Table */}
-      <div className="overflow-x-auto rounded-xl border border-sky-200">
-        <table className="table table-zebra text-sm md:text-base">
-          <thead className="bg-sky-100 text-sky-800">
+      {/* Responsive Scrollable Table */}
+      <div className="w-full overflow-x-auto rounded-lg border border-sky-100 shadow-sm">
+        <table className="table w-max min-w-full">
+          <thead className="bg-sky-100 text-sky-800 text-left">
             <tr>
               <th>#</th>
               <th>Title</th>
@@ -117,27 +109,19 @@ const DashboardAllRecipes = () => {
             </tr>
           </thead>
           <tbody>
-            {recipes.length > 0 ? (
-              recipes.map((recipe, index) => (
-                <tr key={recipe._id} className="hover:bg-purple-50">
-                  <th>{index + 1}</th>
-                  <td className="font-medium text-purple-600">
-                    {recipe.title}
-                  </td>
-                  <td>{recipe.cuisine || "Unknown"}</td>
-                  <td className="text-sky-600">{recipe.likeCount || 0}</td>
-                  <td className="text-gray-500">
-                    {recipe.author || "Anonymous"}
-                  </td>
-                </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan={5} className="text-center text-gray-500 py-4">
-                  No recipes found.
+            {recipes.map((r, i) => (
+              <tr key={r._id} className="hover:bg-purple-50 transition-all">
+                <td className="py-2 px-4">{i + 1}</td>
+                <td className="py-2 px-4 text-purple-700 font-medium">
+                  {r.title}
+                </td>
+                <td className="py-2 px-4">{r.cuisine || "—"}</td>
+                <td className="py-2 px-4 text-sky-600">{r.likeCount || 0}</td>
+                <td className="py-2 px-4 text-gray-500">
+                  {r.author || "Anonymous"}
                 </td>
               </tr>
-            )}
+            ))}
           </tbody>
         </table>
       </div>
