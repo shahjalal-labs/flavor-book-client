@@ -3,6 +3,7 @@ import { AuthContext } from "../../../provider/AuthProvider";
 import useFetch from "../../../hooks/Usefetch";
 import NoRecipe from "../../../pages/NoRecipe";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router";
 
 const DashboardMyrecipes = () => {
   const { user } = useContext(AuthContext);
@@ -20,7 +21,7 @@ const DashboardMyrecipes = () => {
   }, [data]);
 
   return (
-    <div className="p-4">
+    <div className="p-4 w-full max-w-full">
       <Helmet>
         <title>My Recipes || FlavorBook</title>
       </Helmet>
@@ -47,7 +48,10 @@ const DashboardMyrecipes = () => {
       )}
 
       {!loading && recipes.length > 0 ? (
-        <div className="overflow-x-auto mt-8">
+        <div
+          className="overflow-x-auto w-full mt-8"
+          style={{ maxWidth: "100%" }}
+        >
           <table className="table table-zebra w-full min-w-[700px]">
             <thead className="bg-cyan-100 text-cyan-800">
               <tr>
@@ -68,10 +72,12 @@ const DashboardMyrecipes = () => {
                     {recipe.likeCount || 0}
                   </td>
                   <td>
-                    {/* Example action button: View or Edit */}
-                    <button className="btn btn-sm btn-sky btn-outline">
+                    <Link
+                      to={`/recipes/${recipe._id}`}
+                      className="btn btn-sm btn-sky btn-outline"
+                    >
                       View
-                    </button>
+                    </Link>
                   </td>
                 </tr>
               ))}
