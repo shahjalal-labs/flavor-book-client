@@ -8,9 +8,9 @@ Welcome to **FlavorBook**, a full-featured and beautifully crafted web applicati
 
 | Detail                 | Information                                                                        |
 | ---------------------- | ---------------------------------------------------------------------------------- |
-| **GitHub Client site** | [ass-client](https://github.com/mdshahjalal5/ass-client)                           |
+| **GitHub Client site** | [flavor-book-client](https://github.com/shahjalal-labs/flavor-book-client)         |
 | **Live Site client**   | [flavor-book.surge.sh](https://flavor-book.surge.sh/)                              |
-| **GitHub server site** | [10miass](https://github.com/shahjalal-labs/10miass)                               |
+| **GitHub server site** | [flavor-book-server](https://github.com/shahjalal-labs/flavor-book-server)         |
 | **Live Site server**   | [worlds-recipes-sharing-server](https://worlds-recipes-sharing-server.vercel.app/) |
 | **Portfolio GitHub**   | [shahjalal-portfolio](https://github.com/mdshahjalal5/shahjalal-portfolio)         |
 | **Portfolio Live**     | [shahjalal-labs.surge.sh](http://shahjalal-labs.surge.sh/)                         |
