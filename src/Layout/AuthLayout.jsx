@@ -5,7 +5,9 @@ const AuthLayout = () => {
   return (
     <div className="max-container">
       <Nav />
-      <Outlet />
+      <div className="sm:p-7">
+        <Outlet />
+      </div>
     </div>
   );
 };

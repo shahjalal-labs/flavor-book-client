@@ -9,7 +9,7 @@ Welcome to **FlavorBook**, a full-featured and beautifully crafted web applicati
 | Detail                 | Information                                                                        |
 | ---------------------- | ---------------------------------------------------------------------------------- |
 | **GitHub Client site** | [ass-client](https://github.com/mdshahjalal5/ass-client)                           |
-| **Live Site client**   | [flavorbook.surge.sh](https://flavorbook.surge.sh/)                                |
+| **Live Site client**   | [flavor-book.surge.sh](https://flavor-book.surge.sh/)                              |
 | **GitHub server site** | [10miass](https://github.com/shahjalal-labs/10miass)                               |
 | **Live Site server**   | [worlds-recipes-sharing-server](https://worlds-recipes-sharing-server.vercel.app/) |
 | **Portfolio GitHub**   | [shahjalal-portfolio](https://github.com/mdshahjalal5/shahjalal-portfolio)         |
@@ -22,7 +22,7 @@ Welcome to **FlavorBook**, a full-featured and beautifully crafted web applicati
 
 ## 🌐 Live Site
 
-[🔗 Deployed App](#) _(https://flavorbook.surge.sh/)_
+[🔗 Deployed App](#) _(https://flavor-book.surge.sh/)_
 
 ---
 
@@ -447,4 +447,4 @@ Welcome to **FlavorBook**, a dynamic recipe-sharing platform designed to connect
 
 ## 🌐 Live Site
 
-#### please visit [flavorbook.surge.sh](https://flavorbook.surge.sh/) for full website view.
+#### please visit [flavor-book.surge.sh](https://flavor-book.surge.sh/) for full website view.
