@@ -13,19 +13,18 @@ import { getAuth } from "firebase/auth";
   messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
   appId: import.meta.env.VITE_APPID,
 }; */
-
 const firebaseConfig = {
-  apiKey: "AIzaSyDidU2bsQDVEiljW8iEJO-IISH6Tg1FLU8",
+  apiKey: "AIzaSyB3PeX13tBoQ65pO9kRKulB8n9PpiZIabg",
 
-  authDomain: "project-ac54c.firebaseapp.com",
+  authDomain: "flavor-book-6e9a8.firebaseapp.com",
 
-  projectId: "project-ac54c",
+  projectId: "flavor-book-6e9a8",
 
-  storageBucket: "project-ac54c.firebasestorage.app",
+  storageBucket: "flavor-book-6e9a8.firebasestorage.app",
 
-  messagingSenderId: "1012386726541",
+  messagingSenderId: "799865113025",
 
-  appId: "1:1012386726541:web:02dd65a0d12ab26ba818c4",
+  appId: "1:799865113025:web:54983dd84f850eea1c4740",
 };
 
 // Initialize Firebase
