@@ -1,8 +1,11 @@
 import { NavLink, Link } from "react-router";
 import { links } from "../constant";
 import { ChevronDown } from "lucide-react";
+import { AuthContext } from "../provider/AuthProvider";
+import { useContext } from "react";
 
 const Menu = ({ className, isExternal }) => {
+  const { user } = useContext(AuthContext);
   return (
     <ul className={`${className} w-full flex lg:items-center `}>
       {links.map((link) =>
@@ -32,14 +35,18 @@ const Menu = ({ className, isExternal }) => {
           className="dropdown-content menu bg-base-100 rounded-bo z-1 w-52 p-2 shadow-sm"
         >
           <li>
-            <NavLink to="/add-recipe">Add Recipe</NavLink>
-          </li>
-          <li>
             <NavLink to="/all-recipes">All Recipes</NavLink>
           </li>
-          <li>
-            <NavLink to="/my-recipes">My Recipes</NavLink>
-          </li>
+          {user && (
+            <>
+              <li>
+                <NavLink to="/add-recipe">Add Recipe</NavLink>
+              </li>
+              <li>
+                <NavLink to="/my-recipes">My Recipes</NavLink>
+              </li>
+            </>
+          )}
         </ul>
       </div>
       <div className="dropdown dropdown-hover">
@@ -53,9 +60,11 @@ const Menu = ({ className, isExternal }) => {
           <li>
             <NavLink to="/chefs">Chefs</NavLink>
           </li>
-          <li>
-            <NavLink to="/chefs/register">Register as Chef</NavLink>
-          </li>
+          {user && (
+            <li>
+              <NavLink to="/chefs/register">Register as Chef</NavLink>
+            </li>
+          )}
         </ul>
       </div>
       <div className="dropdown dropdown-hover">
@@ -90,12 +99,14 @@ const Menu = ({ className, isExternal }) => {
           </li>
         </ul>
       </div>
-      {/* profile orders page */}
-      <div className="dropdown-hover text-gray-600 font-semibold text-lg">
-        <div tabIndex={0} role="button" className="bt -1">
-          <Link to="/dashboard">Dashboard</Link>
+      {/* dashboard route*/}
+      {user && (
+        <div className="text-gray-600 font-semibold text-lg">
+          <div tabIndex={0} role="button">
+            <Link to="/dashboard">Dashboard</Link>
+          </div>
         </div>
-      </div>
+      )}
     </ul>
   );
 };

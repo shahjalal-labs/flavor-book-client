@@ -129,6 +129,7 @@ const Footerr = () => {
               className="px-4 py-2 border  border-sky-300 rounded-full focus:outline-none focus:ring-2 focus:ring-sky-400"
               name="email"
               defaultValue={user?.email}
+              required
             />
             <button
               type="submit"
