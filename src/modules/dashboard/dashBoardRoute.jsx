@@ -1,5 +1,6 @@
 import DashboardLayout from "./DashboardLayout";
 import DashboardAllRecipes from "./pages/DashboardAllRecipes";
+import DashboardRecipeMarket from "./pages/DashboardRecipeMarket";
 import Overview from "./pages/Overview";
 
 const dashBoardRoutes = {
@@ -13,6 +14,10 @@ const dashBoardRoutes = {
     {
       path: "all-recipes",
       element: <DashboardAllRecipes />,
+    },
+    {
+      path: "recipe-market",
+      element: <DashboardRecipeMarket />,
     },
   ],
 };

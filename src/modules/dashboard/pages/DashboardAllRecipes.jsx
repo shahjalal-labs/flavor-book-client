@@ -112,7 +112,7 @@ const DashboardAllRecipes = () => {
             {recipes.map((r, i) => (
               <tr key={r._id} className="hover:bg-purple-50 transition-all">
                 <td className="py-2 px-4">{i + 1}</td>
-                <td className="py-2 px-4 text-purple-700 font-medium">
+                <td className="py-2 px-4 text-cyan-800 font-medium">
                   {r.title}
                 </td>
                 <td className="py-2 px-4">{r.cuisine || "—"}</td>

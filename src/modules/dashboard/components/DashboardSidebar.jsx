@@ -10,38 +10,32 @@ const DashboardSidebar = () => {
       {/* <h2>Dashboard Sidebar</h2> */}
       <ul className="space-y-2 pt-3 sticky z-10 top-[50px]">
         <li>
-          <NavLink to="/dashboard" className="btn btn-info btn-block">
+          <Link to="/dashboard" className="btn btn-info btn-block">
             Overview
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
-            to="/dashboard/all-recipes"
-            className="btn btn-info btn-block"
-          >
+          <Link to="/dashboard/all-recipes" className="btn btn-info btn-block">
             All Recipes
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
-            to="/dashboard/my-recipes"
-            className="btn btn-info btn-block"
-          >
+          <Link to="/dashboard/my-recipes" className="btn btn-info btn-block">
             My Recipes
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink
+          <Link
             to="/dashboard/recipe-market"
             className="btn btn-info btn-block"
           >
             Recipe Market
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink to="/dashboard/chefs" className="btn btn-info btn-block">
+          <Link to="/dashboard/chefs" className="btn btn-info btn-block">
             Chefs
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </div>
