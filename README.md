@@ -407,6 +407,24 @@ Welcome to **FlavorBook**, a dynamic recipe-sharing platform designed to connect
 
 ![Screenshot](src/assets/screenshots/preview/desktop/HomePage/Homepage.png)
 
+#### Laptop view:
+
+![Screenshot](src/assets/screenshots/preview/laptop/HomePage/HomePage.png)
+
 #### Mobile view:
 
-![Screenshot](src/assets/screenshots/preview/mobile/HomePage/Homepage.png)
+![Screenshot](src/assets/screenshots/preview/mobile/HomePage/HomePage.png)
+
+---
+
+### Dashboard preview:
+
+#### Desktop view:
+
+![Screenshot](src/assets/screenshots/preview/desktop/Dashboard/Overview/Overview.png)
+
+---
+
+#### All Recipes:
+
+![Screenshot](src/assets/screenshots/preview/desktop/Dashboard/AllRecipes/AllRecipes.png)
