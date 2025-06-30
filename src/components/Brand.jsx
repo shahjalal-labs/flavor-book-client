@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Typewriter } from "react-simple-typewriter";
 import LottieAnimation from "../animation/Walking";
 import { cookingAnimation } from "../animation";
+import logo from "../assets/flavorBooks/logoRounded.jpg";
 
 const Brand = ({ className }) => {
   return (
@@ -10,15 +11,27 @@ const Brand = ({ className }) => {
       <div
         className={`sm:min-w-[270px]  flex max-lg:flex-row-reverse items-center gap-2 ${className || ""}`}
       >
-        {/* <img src={logo} width={25} className="rounded-full" /> */}
-        <div className="w-10 max-sm:w-8">
+        <img src={logo} width={35} className="rounded-full" />
+        {/* <div className="w-10 max-sm:w-8">
           <LottieAnimation animation={cookingAnimation} />
-        </div>
+        </div> */}
         <h1 className="max-sm:text-xl text-3xl font-semibold">
           <Link to="/">
-            <span className="font-courgette text-purple-700">
+            <motion.span
+              className="font-courgette text-purple-700"
+              animate={{
+                color: ["#ff5733", "#33ff33", "#8a33ff"],
+                transition: {
+                  duration: 15,
+                  repeat: Infinity,
+                },
+              }}
+            >
+              Flavor
+            </motion.span>
+            <span className="font-kaushan text-sky-700">
               <Typewriter
-                words={["Flavor"]}
+                words={["Book"]}
                 loop={0}
                 cursor
                 cursorStyle=""
@@ -26,20 +39,7 @@ const Brand = ({ className }) => {
                 deleteSpeed={50}
                 delaySpeed={1800}
               />{" "}
-              {/* Flavor */}
             </span>
-            <motion.span
-              animate={{
-                color: ["#ff5733", "#33ff33", "#8a33ff", "#abcd"],
-                transition: {
-                  duration: 5,
-                  repeat: Infinity,
-                },
-              }}
-              className="font-kaushan text-sky-700"
-            >
-              Book
-            </motion.span>
           </Link>
         </h1>
       </div>

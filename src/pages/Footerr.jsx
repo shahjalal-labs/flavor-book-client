@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Mail, Twitter, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
+import Brand from "../components/Brand";
 
 const Footerr = () => {
   return (
@@ -7,7 +8,8 @@ const Footerr = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-3 xl:grid-cols-4">
         {/* Brand Section */}
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-purple-600">🍴 FlavorBook</h2>
+          {/* <h2 className="text-3xl font-bold text-purple-600">🍴 FlavorBook</h2> */}
+          <Brand />
           <p className="text-gray-700">
             Discover, cook, and share your favorite recipes from around the
             globe. A delicious journey awaits. 🌍✨
