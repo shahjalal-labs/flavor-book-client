@@ -18,7 +18,7 @@ const Checkout = () => {
       duration: 3000,
     });
     const { data: response } = await axios.post(
-      "http://localhost:5000/create-ssl-payment",
+      "https://worldwide-recipe-chefs-sharing-serv.vercel.app/create-ssl-payment",
       {
         total_amount: 100,
         currency: "BDT",

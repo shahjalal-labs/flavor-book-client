@@ -8,7 +8,7 @@ import NoOrdersCard from "./NoOrdersCard";
 
 const fetchOrders = async () => {
   const { data } = await axios.get(
-    "http://localhost:5000/api/v1/orders?email=customer@example.com",
+    "https://worldwide-recipe-chefs-sharing-serv.vercel.app/api/v1/orders?email=customer@example.com",
   );
   console.log(data, "Myorders.jsx", 10);
   return data?.data;

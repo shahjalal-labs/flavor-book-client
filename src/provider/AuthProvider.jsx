@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
       if (currentUser?.email) {
         axios
           .post(
-            "http://localhost:5000/api/v1/jwt",
+            "https://worldwide-recipe-chefs-sharing-serv.vercel.app/api/v1/jwt",
             {
               email: currentUser.email,
             },

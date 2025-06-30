@@ -10,7 +10,7 @@ const Recipe = ({ recipe, setRecipes = () => {}, recipes = [] }) => {
   const { image, title, cuisine, likeCount } = recipe;
 
   const hanldeDelete = async (id) => {
-    // const res = await fetch(`http://localhost:5000/api/v1/recipe/${id}`, {
+    // const res = await fetch(`https://worldwide-recipe-chefs-sharing-serv.vercel.app/api/v1/recipe/${id}`, {
     const res = await fetch(
       `https://worlds-recipes-sharing-server.vercel.app/api/v1/recipe/${id}`,
       {

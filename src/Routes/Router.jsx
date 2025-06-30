@@ -27,11 +27,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        // loader: () => fetch("http://localhost:5000/api/v1/recipes?limit=6"),
+        // loader: () => fetch("https://worldwide-recipe-chefs-sharing-serv.vercel.app/api/v1/recipes?limit=6"),
         loader: () =>
           fetch(
             // "https://worlds-recipes-sharing-server.vercel.app/api/v1/recipes?limit=6",
-            "http://localhost:5000/api/v1/recipes?limit=6",
+            "https://worldwide-recipe-chefs-sharing-serv.vercel.app/api/v1/recipes?limit=6",
             {
               credentials: "include",
             },
