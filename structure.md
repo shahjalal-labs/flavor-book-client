@@ -82,7 +82,13 @@
 │   │       │   │           ├── MyRecipe.pdf
 │   │       │   │           └── MyRecipe.png
 │   │       │   ├── laptop
+│   │       │   │   └── HomePage
+│   │       │   │       ├── HomePage.pdf
+│   │       │   │       └── HomePage.png
 │   │       │   └── mobile
+│   │       │       └── HomePage
+│   │       │           ├── HomePage.pdf
+│   │       │           └── HomePage.png
 │   │       └── ss-10-48-41-AM_29-06-25.png
 │   ├── bun.lock
 │   ├── components
@@ -197,6 +203,6 @@
 ├── structure.md
 └── vite.config.js
 
-43 directories, 152 files
+45 directories, 156 files
 
 ```
