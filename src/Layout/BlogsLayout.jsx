@@ -6,7 +6,9 @@ import Nav from "../components/Nav";
 const BlogsLayout = () => {
   return (
     <>
-      <Nav />
+      <div className="">
+        <Nav />
+      </div>
       <div className="mt-10 grid grid-cols-12  max-container ">
         <div className="col-span-6 md:col-span-5 lg:col-span-4 xl:col-span-3 max-sm:hidden  sticky  top-[30px]">
           <div className="sticky  top-[90px] z-10">

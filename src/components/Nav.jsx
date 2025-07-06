@@ -13,8 +13,8 @@ const Nav = () => {
   const { user, logout, loading } = useContext(AuthContext);
 
   return (
-    <header className=" px-4  max-container sticky z-10 top-0">
-      <nav className=" flex max-lg:flex-row-reverse items-center justify-between  p-2 rounded-xl sticky z-[1000] bg-gradient-to-br from-cyan-300/50 via-purple-500/10 to-accent/20 backdrop-blur">
+    <header className=" px-4 sticky z-[1000] bg-gradient-to-br from-cyan-300/50 via-purple-500/10 to-accent/20 backdrop-blur top-0 py-2 ">
+      <nav className=" flex max-lg:flex-row-reverse items-center justify-between  p-2 rounded-xl max-container">
         <div>
           <Brand />
         </div>
