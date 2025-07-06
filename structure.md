@@ -4,6 +4,7 @@
 .
 ├── 200.html
 ├── bun.lock
+├── chk.md
 ├── eslint.config.js
 ├── freelance.md
 ├── imageGenerationPrompt.md
@@ -13,6 +14,7 @@
 ├── public
 │   ├── CNAME
 │   └── vite.svg
+├── readmeGenerate.md
 ├── README.md
 ├── requirement.md
 ├── src
@@ -203,6 +205,6 @@
 ├── structure.md
 └── vite.config.js
 
-45 directories, 156 files
+45 directories, 158 files
 
 ```
