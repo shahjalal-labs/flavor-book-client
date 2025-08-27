@@ -21,12 +21,12 @@ const FAQ = () => {
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className="shadow-md hover:shadow-xl transition duration-300 rounded-xl p-6 border-l-4 border-orange-400  group cursor-pointer hover-effect bg-gradient-to-br from-blue-500/20 via-sky-200/30 to-cyan-300/20"
+              className="shadow-md hover:shadow-xl transition duration-300 rounded-xl p-6 border-l-4 border-indigo-500 group cursor-pointer bg-gradient-to-br from-gray-900/70 via-gray-950/60 to-gray-900/80 hover:shadow-indigo-500/40"
             >
-              <h3 className="text-xl font-semibold text-slate-500 mb-2 group-hover:text-orange-900 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-indigo-400 mb-2 group-hover:text-indigo-200 transition-all duration-300">
                 ❓ {faq.question}
               </h3>
-              <p className="text-gray-700 group-hover:text-gray-900 leading-relaxed text-[16px]">
+              <p className="text-slate-300 group-hover:text-slate-100 leading-relaxed text-[16px]">
                 💡 {faq.answer}
               </p>
             </div>
