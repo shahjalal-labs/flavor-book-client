@@ -1,4 +1,4 @@
-import { features } from "../constant";
+/* import { features } from "../constant";
 import AboutCard from "./About/AboutCard";
 
 const About = () => {
@@ -26,4 +26,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About; */
