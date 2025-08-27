@@ -5,7 +5,12 @@ import Footerr from "../pages/Footerr";
 const Layout = () => {
   return (
     <>
-      <Nav />
+      <div
+        className="bg-gray-900/70 backdrop-blur-xl border border-purple-700/30 
+        hadow-lg shadow-purple-900/40 sticky z-20 top-0"
+      >
+        <Nav />
+      </div>
       <main className="min-h-[60vh] max-container">
         <Outlet />
       </main>
