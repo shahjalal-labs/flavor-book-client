@@ -21,7 +21,9 @@ const Recipes = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://worldwide-recipe-chefs-sharing-serv.vercel.app/api/v1/recipes")
+      .get(
+        "https://worldwide-recipe-chefs-sharing-serv.vercel.app/api/v1/recipes",
+      )
       .then((res) => {
         const data = res.data.data || [];
         setInitialRecipes(data);
