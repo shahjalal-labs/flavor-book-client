@@ -41,3 +41,8 @@
 .hover-effect {
   @apply hover:shadow-md transition-all ease-in-out duration-500 hover:border-1 hover:border-amber-500;
 }
+
+/* index.css */
+body {
+  @apply bg-gradient-to-b from-gray-900 via-gray-950 to-black text-gray-100;
+}
