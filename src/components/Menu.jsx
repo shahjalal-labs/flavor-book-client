@@ -101,7 +101,7 @@ const Menu = ({ className, isExternal }) => {
       </div>
       {/* dashboard route*/}
       {user && (
-        <div className="text-gray-600 font-semibold text-lg">
+        <div>
           <div tabIndex={0} role="button">
             <Link to="/dashboard">Dashboard</Link>
           </div>
