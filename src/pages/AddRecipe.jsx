@@ -123,7 +123,6 @@ const AddRecipe = () => {
         navigate("/my-recipes");
       }, 2200);
 
-      // Reset form
       setFormData({
         image: "",
         title: "",
@@ -139,18 +138,20 @@ const AddRecipe = () => {
 
   return (
     <>
-      <div className="flex lg:flex-row-reverse items-center flex-col  ">
-        <div className="max-w-[800px] mx-auto">
+      <div className="flex lg:flex-row-reverse items-center flex-col bg-gray-900 min-h-screen py-8">
+        <div className="max-lg:max-w-[400px] max-w-[500px] mx-auto">
           <LottieAnimation animation={male_cooking}></LottieAnimation>
         </div>
-        <div className="max-w-2xl mx-auto p-6 text-white dark:text-sky-700">
+        <div className="max-w-2xl mx-auto p-6 text-gray-200">
           <Helmet>
             <title>Add Recipe || FlavorBook</title>
           </Helmet>
-          <h2 className="text-2xl font-bold text-center mb-6">Add a Recipe</h2>
+          <h2 className="text-3xl font-bold text-center mb-6 text-indigo-400">
+            Add a Recipe
+          </h2>
           <form
             onSubmit={handleSubmit}
-            className="space-y-4 bg-white p-6 shadow rounded"
+            className="space-y-4 bg-gray-800 p-6 shadow-xl shadow-black/50 rounded-lg"
           >
             <input
               type="text"
@@ -158,7 +159,7 @@ const AddRecipe = () => {
               placeholder="Image URL"
               value={formData.image}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded"
+              className="w-full bg-gray-700 text-gray-200 border border-gray-600 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
 
             <input
@@ -167,11 +168,11 @@ const AddRecipe = () => {
               placeholder="Recipe Title"
               value={formData.title}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded"
+              className="w-full bg-gray-700 text-gray-200 border border-gray-600 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
               required
             />
 
-            <label className="block font-medium">
+            <label className="block font-medium text-gray-200">
               Ingredients (separate with commas)
             </label>
             <textarea
@@ -179,7 +180,7 @@ const AddRecipe = () => {
               placeholder="e.g. eggs, flour, milk"
               value={formData.ingredients}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded"
+              className="w-full bg-gray-700 text-gray-200 border border-gray-600 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
               rows="2"
               required
             />
@@ -189,7 +190,7 @@ const AddRecipe = () => {
               placeholder="Instructions"
               value={formData.instructions}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded"
+              className="w-full bg-gray-700 text-gray-200 border border-gray-600 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
               rows="3"
               required
             />
@@ -198,7 +199,7 @@ const AddRecipe = () => {
               name="cuisine"
               value={formData.cuisine}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded bg-white"
+              className="w-full bg-gray-700 text-gray-200 border border-gray-600 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
               required
             >
               <option value="">Select Cuisine</option>
@@ -216,21 +217,25 @@ const AddRecipe = () => {
               placeholder="Preparation Time (minutes)"
               value={formData.prepTime}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded"
+              className="w-full bg-gray-700 text-gray-200 border border-gray-600 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
               required
             />
 
             <div>
-              <p className="font-medium mb-1">Categories:</p>
+              <p className="font-medium mb-1 text-gray-200">Categories:</p>
               <div className="flex flex-wrap gap-4">
                 {["Breakfast", "Lunch", "Dinner", "Dessert", "Vegan"].map(
                   (cat) => (
-                    <label key={cat} className="flex items-center gap-2">
+                    <label
+                      key={cat}
+                      className="flex items-center gap-2 text-gray-200"
+                    >
                       <input
                         type="checkbox"
                         value={cat}
                         checked={formData.categories.includes(cat)}
                         onChange={handleCheckbox}
+                        className="accent-indigo-400"
                       />
                       <span>{cat}</span>
                     </label>
@@ -241,7 +246,7 @@ const AddRecipe = () => {
 
             <button
               type="submit"
-              className="bg-blue-600 text-white py-2 px-4 rounded w-full hover:bg-blue-700"
+              className="bg-indigo-600 text-white py-2 px-4 rounded w-full hover:bg-indigo-700 transition"
             >
               Add Recipe
             </button>
