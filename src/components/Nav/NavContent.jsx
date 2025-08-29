@@ -105,7 +105,7 @@
 
 import { Link, NavLink } from "react-router";
 import Button from "../Button";
-import { AlignJustify } from "lucide-react";
+import { AlignJustify, BookOpen, Package, User } from "lucide-react";
 import Menu from "../Menu";
 
 const NavContent = ({ loading, user, logout, setOpen, open }) => {
@@ -130,10 +130,10 @@ const NavContent = ({ loading, user, logout, setOpen, open }) => {
                         className="h-7 w-7 rounded-full border p-[2px] border-gray-600"
                       />
                     </div>
-                    icons for Profile, Orders, Recipes
+
                     <ul
                       tabIndex={0}
-                      className="dropdown-content menu bg-gray-900 text-gray-200 border border-purple-950 rounded-lg z-10 w-52 p-2 shadow-xl shadow-black/50"
+                      className="dropdown-content menu bg-gray-900 text-gray-200 border border-purple-950 rounded-lg z-50 w-52 p-2 shadow-xl shadow-black/50"
                     >
                       <li>
                         <NavLink
